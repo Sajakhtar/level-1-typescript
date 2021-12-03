@@ -6,9 +6,18 @@ Requires installation of Parcel.
 
 ## Setup
 
+Install Parcel bundler:
+
 ```bash
 npm install -g parcel
 ```
+
+Init Node modules:
+
+```bash
+npm init
+```
+
 
 ## Run locally
 
