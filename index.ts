@@ -27,3 +27,9 @@ const tablet: never = 3; // doesnt make sense in this context
 
 
 // Type of 'object', when the other types are not applicable
+
+
+// Compiler
+  // can use TypeScript inbuilt compiler (TSC)
+  // or use Parcel plugin that uses TSC, as it has additional features
+  //
