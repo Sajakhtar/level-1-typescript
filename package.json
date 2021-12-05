@@ -4,16 +4,21 @@
   "description": "Courtesy of [Levelup Tutorials](https://leveluptutorials.com/).",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html "
+    "start": "parcel index.html ",
+    "check": "tsc --noEmit",
+    "build": "parcel build index.ts"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-typescript-tsc": "^2.0.1",
+    "@parcel/transformer-typescript-types": "^2.0.1",
+    "@parcel/validator-typescript": "^2.0.1",
     "parcel-plugin-typescript": "^1.0.0",
     "typescript": "^4.5.2"
   },
   "dependencies": {
     "@parcel/config-default": "^2.0.1"
-  }
+  },
+  "types": "dist/index.d.ts"
 }

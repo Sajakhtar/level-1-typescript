@@ -1,20 +1,19 @@
-"use strict";
 // console.log('hello world');
 // TYPES
-const isOpen = false;
-const firstName = "Jon";
-const age = 30.5;
-const list = [
+var isOpen = false;
+var firstName = "Jon";
+var age = 30.5;
+var list = [
     0,
     1,
     2,
     3
 ];
-const person = [
+var person = [
     'Jon',
     30.5
 ]; // tuple
-const person2 = [
+var person2 = [
     'Jon',
     30.5,
     false
@@ -26,11 +25,11 @@ var Job1;
     Job[Job["PM"] = 2] = "PM";
 })(Job1 || (Job1 = {
 })); // enum (like a list)
-const job = Job1.WebDesigner;
-const phone = "iPhone 12 mini";
-const laptop = 2;
+var job = Job1.WebDesigner;
+var phone = "iPhone 12 mini";
+var laptop = 2;
 // Never should be useful as a result of a function
-const tablet = 3; // doesnt make sense in this context
+var tablet = 3; // doesnt make sense in this context
  // Type of 'object', when the other types are not applicable
  // Compiler
  // can use TypeScript inbuilt compiler (TSC)
