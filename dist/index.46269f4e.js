@@ -1,19 +1,20 @@
+"use strict";
 // console.log('hello world');
 // TYPES
-var isOpen = false;
-var firstName = "Jon";
-var age = 30.5;
-var list = [
+const isOpen = false;
+const firstName = "Jon";
+const age = 30.5;
+const list = [
     0,
     1,
     2,
     3
 ];
-var person = [
+const person = [
     'Jon',
     30.5
 ]; // tuple
-var person2 = [
+const person2 = [
     'Jon',
     30.5,
     false
@@ -25,15 +26,26 @@ var Job1;
     Job[Job["PM"] = 2] = "PM";
 })(Job1 || (Job1 = {
 })); // enum (like a list)
-var job = Job1.WebDesigner;
-var phone = "iPhone 12 mini";
-var laptop = 2;
+const job = Job1.WebDesigner;
+const phone = "iPhone 12 mini";
+const laptop = 2;
 // Never should be useful as a result of a function
-var tablet = 3; // doesnt make sense in this context
- // Type of 'object', when the other types are not applicable
- // Compiler
- // can use TypeScript inbuilt compiler (TSC)
- // or use Parcel plugin that uses TSC, as it has additional features
- //
+// const tablet: never = 3; // doesnt make sense in this context
+// Type of 'object', when the other types are not applicable
+// Compiler
+// can use TypeScript inbuilt compiler (TSC)
+// or use Parcel plugin that uses TSC, as it has additional features
+//
+// FUNCTIONS
+const sayHello = ()=>{
+    console.log('Hello');
+};
+sayHello();
+// functions param is string and function returns a string
+const sayWord = (word)=>{
+    console.log(word);
+    return word.toUpperCase();
+};
+sayWord('whatsup');
 
 //# sourceMappingURL=index.46269f4e.js.map

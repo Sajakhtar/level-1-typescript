@@ -23,7 +23,7 @@ const phone: any = "iPhone 12 mini";
 const laptop: any = 2;
 
 // Never should be useful as a result of a function
-const tablet: never = 3; // doesnt make sense in this context
+// const tablet: never = 3; // doesnt make sense in this context
 
 
 // Type of 'object', when the other types are not applicable
@@ -33,3 +33,20 @@ const tablet: never = 3; // doesnt make sense in this context
   // can use TypeScript inbuilt compiler (TSC)
   // or use Parcel plugin that uses TSC, as it has additional features
   //
+
+
+  // FUNCTIONS
+
+  const sayHello = () => {
+    console.log('Hello');
+  }
+
+  sayHello();
+
+// functions param is string and function returns a string
+const sayWord = (word: string) : string => {
+  console.log(word);
+  return word.toUpperCase();
+}
+
+sayWord('whatsup');
