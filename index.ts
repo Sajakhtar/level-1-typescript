@@ -49,4 +49,4 @@ const sayWord = (word: string) : string => {
   return word.toUpperCase();
 }
 
-sayWord('whatsup');
+sayWord('hey');

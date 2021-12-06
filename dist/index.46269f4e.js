@@ -46,6 +46,6 @@ const sayWord = (word)=>{
     console.log(word);
     return word.toUpperCase();
 };
-sayWord('whatsup');
+sayWord('hey');
 
 //# sourceMappingURL=index.46269f4e.js.map

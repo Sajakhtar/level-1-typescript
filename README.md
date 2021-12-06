@@ -19,7 +19,7 @@ npm init
 ```
 
 
-Compiler
+Compiler (does not work for Parcel 2)
 - can use TypeScript inbuilt compiler (TSC)
 - or use Parcel plugin that uses TSC, as it has additional features
 
