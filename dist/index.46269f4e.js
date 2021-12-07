@@ -42,12 +42,19 @@ const sayHello = ()=>{
 };
 sayHello();
 // functions param is string and function returns a string
-// optional param with ?
-const sayWord = (word)=>{
-    console.log(word || 'Hi');
-    return word || 'Hi';
+// optional param with ? i.e. word?: string
+// const sayWord = (word?: string) : string => {
+//   console.log(word || 'Hi');
+//   return word || 'Hi';
+// }
+// default param, TypeScript infers the default param Type
+// Rest params works as expected
+const sayWord = (word = 'Hi', ...otherStuff)=>{
+    console.log(word);
+    console.log(otherStuff);
+    return word;
 };
-sayWord('hey');
+sayWord('hey', 'wes');
 sayWord();
 
 //# sourceMappingURL=index.46269f4e.js.map
