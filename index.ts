@@ -44,9 +44,11 @@ const laptop: any = 2;
   sayHello();
 
 // functions param is string and function returns a string
-const sayWord = (word: string) : string => {
-  console.log(word);
-  return word.toUpperCase();
+// optional param with ?
+const sayWord = (word?: string) : string => {
+  console.log(word || 'Hi');
+  return word || 'Hi';
 }
 
 sayWord('hey');
+sayWord();

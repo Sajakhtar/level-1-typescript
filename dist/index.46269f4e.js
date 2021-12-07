@@ -42,10 +42,12 @@ const sayHello = ()=>{
 };
 sayHello();
 // functions param is string and function returns a string
+// optional param with ?
 const sayWord = (word)=>{
-    console.log(word);
-    return word.toUpperCase();
+    console.log(word || 'Hi');
+    return word || 'Hi';
 };
 sayWord('hey');
+sayWord();
 
 //# sourceMappingURL=index.46269f4e.js.map
