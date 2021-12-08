@@ -56,5 +56,12 @@ const sayWord = (word = 'Hi', ...otherStuff)=>{
 };
 sayWord('hey', 'wes');
 sayWord();
+// IMPLICIT TYPES
+// however, best practice is to specify the type
+let newName = 'Jim'; // Implied type is string, so you can't set to different type after
+newName = 'Jack';
+// newName = 10;
+let newName2 = newName; // takes type from newName's initial declaration, as that's where type is implied
+newName2 = 10; // so this won't work
 
 //# sourceMappingURL=index.46269f4e.js.map
