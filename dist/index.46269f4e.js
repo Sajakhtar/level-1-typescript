@@ -75,5 +75,13 @@ const makeMargin = (x)=>{
 };
 makeMargin(10); // no error
 makeMargin('10'); // no error
+// NULL TYPES
+let dog; // can be string or null or undefined
+dog = null;
+// null and undefined are assignable to anything
+dog = "lucy";
+dog = 10;
+dog = false;
+dog = undefined; // if you don't want to allow null or undefined or both, you have to strict null check or strict undefined check via the config options
 
 //# sourceMappingURL=index.46269f4e.js.map
