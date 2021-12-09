@@ -63,5 +63,17 @@ newName = 'Jack';
 // newName = 10;
 let newName2 = newName; // takes type from newName's initial declaration, as that's where type is implied
 newName2 = 10; // so this won't work
+// UNION TYPES
+let newName3 = "Jim";
+newName3 = 10;
+newName = false;
+let newName4 = newName3;
+newName4 = 'Joe'; // won't work as it gets type from current value, which is a number
+// UNION TYPES IN FUNCTIONS
+const makeMargin = (x)=>{
+    return `margin: ${x}px;`;
+};
+makeMargin(10); // no error
+makeMargin('10'); // no error
 
 //# sourceMappingURL=index.46269f4e.js.map
