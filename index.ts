@@ -71,16 +71,16 @@ newName = 'Jack';
 
 
 let newName2 = newName; // takes type from newName's initial declaration, as that's where type is implied
-newName2 = 10; // so this won't work
+// newName2 = 10; // so this won't work
 
 
 // UNION TYPES
 
 let newName3: string | number = "Jim";
 newName3 = 10;
-newName = false;
+// newName = false;
 let newName4 = newName3
-newName4 = 'Joe'; // won't work as it gets type from current value, which is a number
+// newName4 = 'Joe'; // won't work as it gets type from current value, which is a number
 
 
 // UNION TYPES IN FUNCTIONS
@@ -98,8 +98,44 @@ let dog: string; // can be string or null or undefined
 dog = null;
 // null and undefined are assignable to anything
 dog = "lucy";
-dog = 10;
-dog = false;
+// dog = 10;
+// dog = false;
 dog = undefined;
 
 // if you don't want to allow null or undefined or both, you have to strict null check or strict undefined check via the config options
+
+
+// INTERFACE
+// allows for type checking data of a certain shape, through named paramters
+// if you know GraphQL, this may seem similiar to defining types for queries
+// Interfaces make code reliable and type safe
+
+
+const sayName = (name: string, age: number): string => {
+  console.log(name, age);
+  return name;
+}
+
+sayName("Jane", 37);
+// sayName(37, "Jane"); // wont work
+
+// defining an interface like a schema
+interface Person {
+  name: string,
+  age: number
+  // address?: string // optional param with ?
+}
+
+const sayName2 = ({ name, age }: Person): string => {
+  console.log(name, age);
+  return name;
+}
+
+sayName2({ name: "Jill", age: 37 });
+
+const sayName3 = ({ name, age }: Person): Person => {
+  console.log(name, age);
+  return { name, age }; // return Person data type
+}
+
+sayName3({ name: "Jim", age: 37 });
