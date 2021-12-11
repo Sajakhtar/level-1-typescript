@@ -139,3 +139,45 @@ const sayName3 = ({ name, age }: Person): Person => {
 }
 
 sayName3({ name: "Jim", age: 37 });
+
+
+// ENUMs
+//  might have encounteres in graphQL
+//  Enum is it's own type
+// it allows us to define a set of named constants
+//  a list of things  that are the only values
+// usefule for select lists or categories of things
+// TypeScript has numeric and string based Enums
+
+
+// Numeric Enum
+enum Type {
+  Video, // 0
+  BlogPost, // 1
+  Quiz // 2
+}
+
+console.log(Type.Quiz); // prints the index
+
+const createContent = (contentType: Type) => {
+  return contentType;
+}
+
+createContent(Type.Video);
+createContent(0); // index works
+
+// String Enum
+enum Type2 {
+  Video = "VIDEO",
+  BlogPost = "BLOG_POST",
+  Quiz = "QUIZ"
+}
+
+console.log(Type2.Quiz); // prints the string
+
+const createContent2 = (contentType: Type2) => {
+  return contentType;
+}
+
+createContent2(Type2.Video);
+createContent2("QUIZ"); // Not gonna work
