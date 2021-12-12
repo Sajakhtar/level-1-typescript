@@ -181,3 +181,30 @@ const createContent2 = (contentType: Type2) => {
 
 createContent2(Type2.Video);
 createContent2("QUIZ"); // Not gonna work
+
+
+// CLASSES
+
+class Team {
+  teamName: string; // public by default
+  // public teamName: s tring;
+  // private teamName: string;
+  // readonly teamName: string; // prevents from being changed
+
+  constructor(teamName) {
+    this.teamName = teamName;
+
+  }
+
+  score(): string {
+    this.teamName = "changing";
+    console.log("gooooal");
+    console.log(this.teamName);
+    return 'goal';
+  }
+}
+
+const redwings = new Team("Red Wings");
+
+redwings.score();
+console.log(redwings.teamName);

@@ -147,5 +147,23 @@ const createContent2 = (contentType)=>{
 };
 createContent2(Type21.Video);
 createContent2("QUIZ"); // Not gonna work
+// CLASSES
+class Team {
+    // public teamName: s tring;
+    // private teamName: string;
+    // readonly teamName: string; // prevents from being changed
+    constructor(teamName){
+        this.teamName = teamName;
+    }
+    score() {
+        this.teamName = "changing";
+        console.log("gooooal");
+        console.log(this.teamName);
+        return 'goal';
+    }
+}
+const redwings = new Team("Red Wings");
+redwings.score();
+console.log(redwings.teamName);
 
 //# sourceMappingURL=index.46269f4e.js.map
