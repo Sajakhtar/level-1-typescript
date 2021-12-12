@@ -1,5 +1,6 @@
 // console.log('hello world');
 
+import Job, { Person, Type2 } from './src/Interfaces';
 
 // TYPES
 
@@ -15,7 +16,7 @@ const person: [string, number] = ['Jon', 30.5];  // tuple
 
 const person2: [string, number, boolean] = ['Jon', 30.5, false];  // tuple
 
-enum Job { WebDev, WebDesigner, PM }  // enum (like a list)
+// enum Job { WebDev, WebDesigner, PM }  // enum (like a list)
 const job: Job = Job.WebDesigner;
 
 
@@ -120,11 +121,11 @@ sayName("Jane", 37);
 // sayName(37, "Jane"); // wont work
 
 // defining an interface like a schema
-interface Person {
-  name: string,
-  age: number
-  // address?: string // optional param with ?
-}
+// interface Person {
+//   name: string,
+//   age: number
+//   // address?: string // optional param with ?
+// }
 
 const sayName2 = ({ name, age }: Person): string => {
   console.log(name, age);
@@ -167,11 +168,11 @@ createContent(Type.Video);
 createContent(0); // index works
 
 // String Enum
-enum Type2 {
-  Video = "VIDEO",
-  BlogPost = "BLOG_POST",
-  Quiz = "QUIZ"
-}
+// enum Type2 {
+//   Video = "VIDEO",
+//   BlogPost = "BLOG_POST",
+//   Quiz = "QUIZ"
+// }
 
 console.log(Type2.Quiz); // prints the string
 
@@ -180,7 +181,7 @@ const createContent2 = (contentType: Type2) => {
 }
 
 createContent2(Type2.Video);
-createContent2("QUIZ"); // Not gonna work
+// createContent2("QUIZ"); // Not gonna work
 
 
 // CLASSES

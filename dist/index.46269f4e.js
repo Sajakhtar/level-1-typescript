@@ -93,6 +93,13 @@ const sayName = (name, age)=>{
     return name;
 };
 sayName("Jane", 37);
+// sayName(37, "Jane"); // wont work
+// defining an interface like a schema
+// interface Person {
+//   name: string,
+//   age: number
+//   // address?: string // optional param with ?
+// }
 const sayName2 = ({ name , age  })=>{
     console.log(name, age);
     return name;
