@@ -44,6 +44,8 @@ Open http://localhost:1234/.
 
 If using JS modules add `type="module"` to the script tag in index.html.
 
+Usefule TS resources: [Awesome TypeScript](https://github.com/dzharii/awesome-typescript)
+
 ## TypeScript Compiler (TSC)
 
 Install TypeScript as dev dependancy:
