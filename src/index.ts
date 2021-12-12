@@ -209,3 +209,14 @@ const redwings = new Team("Red Wings");
 
 redwings.score();
 console.log(redwings.teamName);
+
+// GENERIC TYPES
+// allows for types to be reusable
+// use <T> (can be any letter)
+
+const outputInput = <T>(arg: T): T => {
+  return arg;
+}
+
+outputInput('hi');
+outputInput(3);

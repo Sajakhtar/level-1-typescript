@@ -571,6 +571,11 @@ var Team1 = function() {
 var redwings = new Team1("Red Wings");
 redwings.score();
 console.log(redwings.teamName);
+var outputInput = function(arg) {
+    return arg;
+};
+outputInput('hi');
+outputInput(3);
 
 },{"./Interfaces":"8aKI1","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"8aKI1":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
