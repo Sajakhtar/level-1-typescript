@@ -576,6 +576,18 @@ var outputInput = function(arg) {
 };
 outputInput('hi');
 outputInput(3);
+var Dancer1 = function() {
+    function Dancer() {
+    }
+    return Dancer;
+}();
+var ElNino = new Dancer1();
+var fakeData = {
+    name: "Jack",
+    age: 30,
+    year: 2000
+};
+ElNino = fakeData;
 
 },{"./Interfaces":"8aKI1","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}],"8aKI1":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");

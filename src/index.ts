@@ -220,3 +220,25 @@ const outputInput = <T>(arg: T): T => {
 
 outputInput('hi');
 outputInput(3);
+
+
+// DUCK TYPING
+// allow interfaces to be used with classes
+
+// define class using an interface using implements keyword
+
+class Dancer implements Person {
+  name: string;
+  age: number;
+}
+
+let ElNino: Person = new Dancer();
+
+const fakeData = {
+  name: "Jack",
+  age: 30,
+  year: 2000
+}
+// fakeData matches the shape of the Person interface i.e. name and age
+// doesnt matter if fakeData has extra params e.g. year
+ElNino = fakeData;
