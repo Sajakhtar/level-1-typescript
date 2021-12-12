@@ -39,3 +39,24 @@ To run local server port 1234:
 parcel index.html
 ```
 Open http://localhost:1234/.
+
+## Notes
+
+If using JS modules add `type="module"` to the script tag in index.html.
+
+## TypeScript Compiler (TSC)
+
+Install TypeScript as dev dependancy:
+```bash
+npm install --save-dev typescript
+```
+
+Create a `tsconfig.json` filer in the root of the project.
+
+Add `"tsc": "tsc",` in the package.json scripts, then run the following in order to use the TypeScript Compiler within the project:
+
+```bash
+npm run tsc
+```
+
+This will create convert the `.ts` files into `.js` files.

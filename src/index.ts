@@ -1,6 +1,6 @@
 // console.log('hello world');
 
-import Job, { Person, Type2 } from './src/Interfaces';
+import Job, { Person, Type2 } from './Interfaces';
 
 // TYPES
 

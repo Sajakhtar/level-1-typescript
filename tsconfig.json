@@ -1,12 +1,25 @@
 {
-  "include": [
-    "src/**/*"
-  ],
   "compilerOptions": {
-    "target": "es2021",
-    "strict": true
-  }
+    "removeComments": true,
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
+
+
+// {
+//   "include": [
+//     "src/**/*"
+//   ],
+//   "compilerOptions": {
+//     "target": "es2021",
+//     "strict": true
+//   }
+// }
 
 // {
 //   "include": [
